@@ -1,0 +1,92 @@
+<html>  <!-- DOCTYPE == to treat the document as html doc -->
+    <head>
+        <title>HTML tags</title>
+
+    </head>
+    <body>
+        <p>para tag</p>
+        <h3>heading tag-3</h3>
+
+        <div>New section
+            <p>para 1<br></p>
+            <p><span>para 2</span></p>
+        </div> 
+        <!-- div == signify particular different section/showcase division 
+        br== new para, it doesnt hv closing tag -->
+        <!-- semantic elements-> an elem which clearly describe its meaning to both the browser and the developer -->
+
+        <!-- block level elements== which always start on new line n takes the whole page width(of the webpage) (ex: h1..h6,p,div)-->
+
+        <!-- inline element== doesnt take new line, doesnt take whole width(br,span) -->
+
+        <!-- span tag(<span></span>) ==to highlight portion of some part of para -->
+
+        <!-- you shouldnt have block elem inside of inline elem , cuz block will take whole width inside inline which is illigal-->
+
+        <!-- anchor tag(inline elem)= hyperlink, target==opens link in target tab
+            ("_blank"=new page) -->
+
+            <!-- b=bold,i=italic,u=underline(inline tags) -->
+
+        <div>
+            hey there:<br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            <a href="https://www.google.com/">google</a> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            <a href="https://www.google.com/" target="_blank">google</a>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            <br>
+             <b>and more recently with desktop </b>
+            
+            <br>
+            <i>publishing software like Aldus </i>
+            
+            <br>
+            <u>PageMaker including versions of Lorem Ipsum.</u>
+
+
+            <br>
+            <br>
+            <h3> groceries</h3>
+            <ul type="square"> 
+                
+                <!-- by default is circle, we can use sqare,disc -->
+                <li> lisst item 1</li>
+                <li> list item 2</li>
+            </ul>
+
+            <h3> batting lineup</h3>
+            <ol type="I">  
+                <!-- use type as A,a,I,i to get diff results unless its default 1,2,3 -->
+                <li> lisst item 1</li>
+                <li> list item 2</li>
+            </ol>
+                list done
+
+                <h3>olympic countries</h3>
+                <ul>
+                    <li>INDIA
+                        <ol>
+                            <li> player 1</li>
+                            <li>player 2</li>
+                        </ol>
+                    </li>
+                    <li>aus
+                        <ol>
+                            <li> player 1</li>
+                            <li>player 2</li>
+                        </ol>
+                    </li>
+                </ul>
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/564x/1a/8e/b1/1a8eb13e5c89620b2accf2b8b23d2586.jpg" alt="pupper image">
+            <img src="../my codes/images.jpg" alt="nooo">
+            <!--img(is an inline in some cases, but its actually an inline block elem==cuz we can define height and width of img) 
+                alt== shows a text if the img cant load if img is in folder of the code we can use address (..==it defines the folder we are in) of the image in our directory-->
+        </div>
+        </body>
+</html>
+
+
+
+<!-- unordered list(block elem), li=list item
+ol=ordered list (block elem)-->
