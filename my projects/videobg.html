@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+  <link rel="stylesheet" href="bg.css">
+  <title>travel agencies</title>
 </head>
 <body>
-  <video id="videobg" poster="ss.png" autoplay muted loop>
-    <source src="lake.mp4" type="video/mp4">
-  </video>  
+  <section class="showcase ">
+    <header>
+      <h2 class="logo">travel</h2>
+      <div class="toggle"></div>
+    </header>
+
+    <video playsinline autoplay muted loop >
+      <source src="https://res.cloudinary.com/souvik022/video/upload/v1649524036/explorer_lfbjde.mp4" type="video/mp4"> Y</video>
+
+    <div class="overlay"></div>
+
+    <div class="text">
+      <h2>Never Stop</h2>
+      <h3>Exploreing The World</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla voluptatem odio pariatur sint nobis, vitae illo at iure quo?</p>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://www.transparentpng.com/thumb/facebook-logo-png/image-black-facebook-logo-png-26.png" alt="Image black facebook logo png @transparentpng.com" width="40" 
+        height="40"></a></li>
+      <li><a href="#"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-white-circle-png-images-23.png" width="40" 
+        height="30"></a></li>
+      <li><a href="#"><img src="https://www.freepnglogos.com/uploads/512x512-logo/512x512-transparent-instagram-logo-icon-5.png"width="40" 
+        height="40"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">news</a></li>
+      <li><a href="#">destination</a></li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">contact Us</a></li>
+    </ul>
+  </div>
+
+  <script>
+const menuToggle= document.querySelector('.toggle')
+const showcase= document.querySelector('.showcase')
+
+menuToggle.addEventListener('click', () =>{
+  menuToggle.classList.toggle('active')
+  showcase.classList.toggle('active')
+})
+  </script>
 </body>
 </html>
