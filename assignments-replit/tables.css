@@ -1,0 +1,30 @@
+table,td,th{
+    border: 1px solid; 
+text-align: center;
+}
+table{
+    width: 100%;
+  }
+  
+.pad1{
+padding-top:30px;
+padding-bottom:30px;
+
+}
+.pad2{
+padding-top:20px;
+padding-bottom:20px;
+
+}
+.pad3{
+padding-top:20px;
+padding-bottom:20px;
+
+}
+.list{
+    padding-top:20px;
+}
+.html{
+background-color: black;
+color: white; 
+}
