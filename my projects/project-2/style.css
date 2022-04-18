@@ -1,0 +1,252 @@
+html { 
+  font-family: century-gothic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    background-color:rgb(27, 27, 27);
+}
+
+
+
+.logo{
+    border: 1px solid yellow;
+    padding: 0;
+    width:fit-content;
+    border-width: 2px;
+    position: relative;
+    top: 10px;
+    
+}
+.name{
+    position: absolute;
+    top: 14px;
+    left: 30px;
+    font-size:11px;
+    color: white;
+}
+
+ul {
+    position: absolute;
+    left: 400px;
+    top: 16px;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+     }
+
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+      font-size: 10px;
+    display: block;
+    color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; 
+  } 
+
+  li a:hover {
+    background-color: #111;
+  }
+  .active{
+    background-color: #272927;
+    color: white;
+  
+  }
+
+  input[type=text] {
+    position: relative;
+    top: 10px;
+    left:25px;
+  flex: right;
+    padding: 1px;
+    border: none;
+    
+    background-color: #272927;
+    font-size: 9px;
+  }
+  .mail {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 100px;
+    padding-top: 28px;
+    padding-left: 100px;
+    filter: invert(1);
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    background-color: blue;
+    z-index: -2;
+    }
+    .mail img:hover{
+      cursor: pointer;
+    }
+
+.travel{
+  color: yellow;
+  position: absolute;
+  top:230px;
+  font-size: smaller;
+  padding-left: 25px;
+}
+
+.text{
+  color: white;
+  position: absolute;
+  top:250px;
+  padding-left: 25px;
+  width: 50%;
+  font-size: 30px;
+  cursor: pointer;
+
+}
+.text:hover{
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.border img {
+  border-bottom: 8px solid;
+  border-image: linear-gradient(to right, yellow 50%, transparent 50%) 100% 1;
+  position: absolute;
+  right: 100px;
+  top: 80px;
+}
+.border img:hover{
+  transform: scale(1.03);
+  transition: 0.6s;
+}
+
+.info{
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.info img{
+  z-index: -1;
+  position: relative;
+  top: 50px;
+  left: -60px;
+}
+
+.info p{
+  color: aliceblue;
+  font-size: smaller;
+}
+.info button{
+  
+  color: yellow;
+  background-color: transparent;
+  border: 1px solid yellow;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  left: 300px;
+  top: -70px;
+}
+
+.info button:hover {
+  background-color: #4CAF50;
+  color: white;
+  letter-spacing: 3px;
+  transition: 0.6s;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  position: relative;
+  top:532px;
+  left: 200px;
+  z-index: 1;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-bottom: 1px solid yellow;
+
+}
+.column img:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  cursor: pointer;
+  
+}
+.column p{
+  color: white;
+ text-decoration: dotted;
+}
+
+
+.column .top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: yellow;
+}
+
+.column .top{
+  color: yellow;
+  position: absolute;
+  top: 8px;
+  left: 348px;
+}
+.column .t{
+  color: yellow;
+  position: absolute;
+  top: 8px;
+  left:675px;
+}
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+      
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+     .topnav input[type=text] {
+      border: 1px solid #ccc;
+
+    }
+    .mail{
+      transform:  translateY(300px);
+    }
+   
+    
+  }
+
