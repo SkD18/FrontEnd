@@ -312,7 +312,9 @@ footer p {
     .stats-heading {
         font-size: 5rem;
     }
-
+    .testimonial-text{
+        font-size: 2rem;
+    }
     /* Features */
 
     .content {
@@ -334,9 +336,7 @@ footer p {
     .white-bg .feature-text {
         padding-left: 10%;
     }
-    .testimonial-text{
-        font-size: 3rem;
-    padding:5px;}
+    
 
     /* Footer */
 
