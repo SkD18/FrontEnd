@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
-
+:root{
+    --overlay-color: #041C32;
+    --color1:hsl(322, 100%, 66%);
+    --color2:hsl(321, 100%, 78%);
+    --color3:hsl(0, 0%, 100%);
+}
 body {
     text-align: center;
 }
@@ -20,6 +25,7 @@ p {
 
 /* Navbar */
 
+
 .navbar {
     padding: 10px;
     margin: 20px 0;
@@ -34,17 +40,26 @@ p {
     width: 70%;
 }
 
+.navbar-nav{
+    text-align: right;
+    
+}
+.nav-item{
+    padding: 0 18px;
+    float: right;
+    text-decoration: none;
+}
 .button-nav {
-    border: 1px solid hsl(322, 100%, 66%);
-    color: hsl(322, 100%, 66%);
+    border: 1px solid var(--color1);
+    color: var(--color1);
     font-size: 0.8rem;
     line-height: 1.5;
     padding: 2px 20px;
 }
 
 .button-nav:hover {
-    border: 1px solid  hsl(321, 100%, 78%);
-    color: hsl(321, 100%, 78%);
+    border: 1px solid  var(--color2);
+    color: var(--color2);
 }
 
 /* Title Page */
@@ -58,17 +73,17 @@ p {
 }
 
 .title-button {
-    color: hsl(0, 0%, 100%);
+    color: var(--color3);
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 600;
-    background-color: hsl(322, 100%, 66%);
+    background-color: var(--color1);
     padding: 10px 40px;
 }
 
 .title-button:hover, .footer-btn:hover {
-    background-color: hsl(321, 100%, 78%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--color2);
+    color: var(--color3);
 }
 
 .title-image {
@@ -113,6 +128,7 @@ p {
 .feature-image {
     max-width: 100%;
     padding: 0 30px;
+    
 }
 
 .feature-text {
@@ -142,6 +158,36 @@ p {
     width: 100%;
 }
 
+
+
+/* test */
+/* .site-content{
+    background-image: url("images/image3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+} */
+#testimonials{
+    
+    /* background-image: url("./images/image3.jpg");
+    background-attachment: fixed;
+    background-size: cover; */
+    background-color: var(--overlay-color);
+color: whitesmoke;}
+
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px;
+   
+}
+
+.testimonial-image{
+    width: 10%;
+   
+    border-radius: 100%;
+    margin: 20px;
+}
 /* Call to Action */
 
 #cta {
@@ -163,17 +209,17 @@ footer p {
 
 .footer-content {
     background-color: hsl(192, 100%, 9%);
-    color: hsl(0, 0%, 100%);
+    color: var(--color3);
     text-align: left;
     padding: 0 30px;
 }
 
 .footer-btn {
-    color: hsl(0, 0%, 100%);
+    color: var(--color3);
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 600;
-    background-color: hsl(322, 100%, 66%);
+    background-color: var(--color1);
     padding: 8px 30px;
     float: right;
 }

@@ -27,7 +27,12 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <title>Huddle landing page with curved sections</title>
 
    
     <style>
@@ -50,6 +55,24 @@
           <a class="navbar-brand" href="#">
             <img class="nav-logo" src="images/logo.svg" alt="huddle-logo" />
           </a>
+          <!-- experiment -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Contact
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Pricing
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Download
+                </a>
+            </li>
+        </ul> <!-- experiment -->
           <button type="button" class="button-nav btn ms-auto rounded-pill">
             Try It Free
           </button>
@@ -211,6 +234,38 @@
       </div>
     </section>
 
+  <!-- Testimonials -->
+  <section class="colored-section" id="testimonials">
+    <div class="site-content">
+    <div class="d-flex justify-content-center">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active container-fluid">
+                <h2 class="testimonial-text">
+                   Got the bg color from colorhunt site. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit distinctio facilis, ab totam reprehenderit.</h2>
+                <img src="images/contacts-64.png"     alt="person" class="testimonial-image">
+                <em>John, LA</em>
+            </div>
+            <div class="carousel-item container-fluid">
+                <h2 class="testimonial-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, distinctio! Maiores officiis accusamus vero molestiae!  </h2>
+                <img src="images/contacts-32.png" alt="another person" class="testimonial-image">
+                <em>Kristina, UK</em>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon">
+            </span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon">
+            </span>
+        </a>
+    </div>
+    </div>
+  </div>
+</section>
+
     <!-- Call to Action -->
 
     <section id="cta">
@@ -282,12 +337,9 @@
       </div>
     </footer>
     <p class="attribution mb-0">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-        Frontend Mentor
-      </a>
-      . Coded by
-      <a href="https://www.frontendmentor.io/profile/sn-tin">Kristine May</a>
+      &copy;
+       Copyrighted by
+      <a href="#">Souvik Dutta</a>
       .
     </p>
   </body>
